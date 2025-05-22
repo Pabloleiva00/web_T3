@@ -1,0 +1,127 @@
+
+.landing-page {
+  background-color: #d8eab5;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-size: 3.5rem;
+  font-weight: 900;
+  color: #1d1d1d;
+}
+.title span {
+  color: #f9d7d7;
+}
+
+.auth-card-border {
+  border: 1.5px solid #b6d6f7; 
+  border-radius: 20px;
+  background-color: #f7faf7; 
+}
+
+.subtitle-1 {
+  font-size: 1.5rem;
+  color: #535252;
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.divider-text {
+  display: flex;
+  align-items: center;
+  font-size: 0.8rem;
+  margin: 1.5rem 0;
+  font-weight: 500;
+  color: #777;
+}
+.divider-text::before,
+.divider-text::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background-color: #ccc;
+  margin: 0 12px;
+}
+
+.footer-text {
+  font-size: 0.85rem;
+  color: #444;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.rounded-btn {
+  border-radius: 999px !important;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.06) !important;
+  transition: transform 0.2s ease !important;
+}
+.rounded-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15) !important;
+}
+
+.custom-form {
+  border-radius: 16px;
+  padding: 24px;
+}
+
+
+.input-label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.custom-input .v-field__field {
+  background-color: #FFFBCC !important;
+  border-radius: 12px;
+}
+
+.v-field:not(.v-field--focused):not(.v-field--error) .v-field__outline {
+  border-color: #D1A200 !important;
+}
+
+.custom-btn {
+  background-color: #FFFBCC !important;
+  color: #161c21 !important;
+  border-radius: 24px !important;
+  text-transform: capitalize !important;
+  font-weight: 550 !important;   
+  font-size: 1rem !important;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1) !important;
+  transition: transform 0.2s, box-shadow 0.2s !important;
+}
+.custom-btn:hover {
+  transform: translateY(-4px) !important;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15) !important;
+}
+
+.avatar-square {
+  border-radius: 12px !important; /* o 0 si quieres borde recto */
+  object-fit: contain !important;
+}
+
+.no-bg-btn {
+  background-color: transparent !important;
+  color: inherit !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+}
+
+.no-bg-btn:hover {
+  background-color: transparent !important;
+}
+.custom-v-list {
+  background-color: #f7faf7;
+  border-radius: 12px;
+  padding: 12px;
+}
+
+.custom-v-list-item {
+  margin-bottom: 12px; 
+  border-radius: 8px;
+}
