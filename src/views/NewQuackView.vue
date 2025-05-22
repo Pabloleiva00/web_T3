@@ -48,6 +48,7 @@
   import ImageEditor from 'tui-image-editor'  
   import 'tui-image-editor/dist/tui-image-editor.css'
   import { uploadDuckImage } from '@/services/api'
+  import { fetchRandomDuck } from '@/services/api'
   
   const file = ref(null)
   const previewUrl = ref(null)
@@ -129,6 +130,8 @@
     const blob = await res.blob()
     const formData = new FormData()
     formData.append('file', blob, file.value.name)
+    const randomDuck = await fetchRandomDuck()
+    console.log('Random duck info:', randomDuck.data)
 
     const uploadRes = await uploadDuckImage(formData, true)
 

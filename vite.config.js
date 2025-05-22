@@ -13,6 +13,7 @@ export default defineConfig({
     vue(),
     vuetify({ autoImport: true }),
   ],
+  base: 'https://Pabloleiva00.github.io/web_T3/',
   optimizeDeps: {
     force: true,                
     exclude: ['vuetify'],      
