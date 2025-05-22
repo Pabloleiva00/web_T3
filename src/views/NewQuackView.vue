@@ -130,10 +130,13 @@
     const blob = await res.blob()
     const formData = new FormData()
     formData.append('file', blob, file.value.name)
+
+    // Prueba GET
     const randomDuck = await fetchRandomDuck()
     console.log('Random duck info:', randomDuck.data)
 
-    const uploadRes = await uploadDuckImage(formData, true)
+    // ✅ Llamada al proxy sin segundo parámetro
+    const uploadRes = await uploadDuckImage(formData)
 
     if (uploadRes.data && uploadRes.data.success) {
       uploadMessage.value = 'Your duck has been submitted successfully!'
@@ -152,4 +155,5 @@
     isUploading.value = false
   }
 }
+
   </script>  

@@ -72,7 +72,7 @@ export function fetchHttpStatusImage(code, ext = 'jpg') {
  * @param {boolean} [formatJson=false] Añade ?format=json para recibir JSON
  */
 export function uploadDuckImage(formData, formatJson = false) {
-  const url = `https://random-d.uk/add${formatJson ? '?format=json' : ''}`
+  const url = `http://localhost:3000/upload`;
   return axios.post(url, formData, {
     headers: { 'Content-Type': 'multipart/form-data' }
   })
